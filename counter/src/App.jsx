@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Timer from './Timer.jsx';
 import './App.css'
+
 
 function App() {
  let [counter,setCounter]=useState(15);
@@ -23,6 +23,7 @@ function App() {
       <button onClick={addValue}>Add value</button>
       <br />
       <button onClick={removeValue}>remove value</button>
+      <Timer/>
       
     </>
   )
